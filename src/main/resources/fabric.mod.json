@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "craftulator",
+	"version": "${version}",
+	"name": "Craftulator",
+	"description": "A simple calculator built into Minecraft's recipe book.",
+	"authors": [
+		"Dotquard"
+	],
+	"contact": {
+		"sources": "https://github.com/"
+	},
+	"license": "MIT",
+	"icon": "assets/craftulator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.craftulator.Craftulator"
+		],
+		"client": [
+			"com.craftulator.client.CraftulatorClient"
+		]
+	},
+	"mixins": [
+		"craftulator.mixins.json",
+		{
+			"config": "craftulator.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

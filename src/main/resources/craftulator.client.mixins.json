@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.craftulator.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "RecipeBookSearchMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
